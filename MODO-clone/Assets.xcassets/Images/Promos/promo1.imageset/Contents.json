@@ -1,6 +1,7 @@
 {
-  "colors" : [
+  "images" : [
     {
+      "filename" : "promo1.png",
       "idiom" : "universal"
     }
   ],

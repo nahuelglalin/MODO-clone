@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "recharge-modo.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
