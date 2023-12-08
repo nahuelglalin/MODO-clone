@@ -49,7 +49,9 @@ class SettingsAvatar: UIView {
     
     func configure(with user: User) {
         nameLabel.text = user.name
+        nameLabel.font = UIFont(name: "RedHatDisplay-SemiBold", size: 19)
         descriptionLabel.text = "📱 +549\(user.description)"
+        descriptionLabel.font = UIFont(name: "RedHatDisplay-Regular", size: 13)
         avatarImageView.image = UIImage(named: user.avatarName)
     }
     

@@ -22,7 +22,7 @@ class SettingsCell: UITableViewCell {
     // 2da prop
     private let label: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 14)
+        label.font = UIFont(name: "RedHatDisplay-Regular", size: 14)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -56,8 +56,8 @@ class SettingsCell: UITableViewCell {
             icon.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12),
             icon.topAnchor.constraint(equalTo: topAnchor, constant: 12),
             icon.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -12),
-            icon.widthAnchor.constraint(equalToConstant: 40),
-            icon.heightAnchor.constraint(equalToConstant: 40),
+            icon.widthAnchor.constraint(equalToConstant: 35),
+            icon.heightAnchor.constraint(equalToConstant: 35),
             
             label.leadingAnchor.constraint(equalTo: icon.trailingAnchor, constant: 10),
             label.centerYAnchor.constraint(equalTo: icon.centerYAnchor),

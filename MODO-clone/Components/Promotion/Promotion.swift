@@ -7,11 +7,22 @@
 
 import UIKit
 
-class Promotion: UICollectionViewCell {
+class PromotionDto {
+    var image: UIImage?
+    
+    required init(image: UIImage) {
+        self.image = image
+    }
+}
 
+class Promotion: UICollectionViewCell {
+    
+    @IBOutlet weak var image: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        layer.cornerRadius = 10
+        layer.masksToBounds = true
     }
 
 }

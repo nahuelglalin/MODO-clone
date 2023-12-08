@@ -20,6 +20,15 @@
 				</dict>
 			</array>
 		</dict>
+		<key></key>
+		<false/>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>RedHatDisplay-Bold.ttf</string>
+		<string>RedHatDisplay-Regular.ttf</string>
+		<string>RedHatDisplay-SemiBold.ttf</string>
+		<string>RedHatDisplay-Light.ttf</string>
+	</array>
 </dict>
 </plist>

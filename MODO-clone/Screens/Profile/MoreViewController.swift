@@ -4,35 +4,12 @@
 //
 //  Created by Nahuel Lalin on 06/12/2023.
 //
+
 import UIKit
-
-struct Setting {
-    let label: String
-    let icon: String
-}
-
-struct User {
-    let name: String
-    let description: String
-    let avatarName: String
-}
-
-let settings = [
-    Setting(label: "Configuración", icon: "icSettings"),
-    Setting(label: "QR Personal", icon: "icCodeQR"),
-    Setting(label: "Donar con MODO", icon: "icDonate"),
-    Setting(label: "Necesitas ayuda?", icon: "icHeadphones"),
-    Setting(label: "Invitar amigos", icon: "icInviteFriends"),
-    Setting(label: "Ayudanos a mejorar", icon: "icComments"),
-    Setting(label: "Legales", icon: "icQuestion"),
-    Setting(label: "Cerrar sesión", icon: "icSignout")
-]
-
-let user = User(name: "Nahuel Lalin", description: "1135950702", avatarName: "profile")
 
 class MoreViewController: UIViewController, UITableViewDataSource {
     
-    private let userCardView = SettingsAvatar(frame: CGRect(x: 0, y: 45, width: 300, height: 100));
+    private let userCardView = SettingsAvatar(frame: CGRect(x: 10, y: 45, width: 300, height: 100));
     
     private let devicesTableView: UITableView = {
         let tableView = UITableView()
@@ -56,10 +33,9 @@ class MoreViewController: UIViewController, UITableViewDataSource {
             userCardView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             userCardView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             
-            
             devicesTableView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            devicesTableView.topAnchor.constraint(equalTo: userCardView.bottomAnchor, constant: 8),
-            devicesTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            devicesTableView.topAnchor.constraint(equalTo: userCardView.bottomAnchor, constant: 10),
+            devicesTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
             devicesTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             devicesTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
