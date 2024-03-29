@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icWhatsappSmall.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,28 @@
+PODS:
+  - AmplitudeSwift (1.3.0):
+    - AnalyticsConnector (~> 1.0.1)
+  - AnalyticsConnector (1.0.3)
+  - lottie-ios (4.3.4)
+  - SwiftSVG (2.3.2)
+
+DEPENDENCIES:
+  - AmplitudeSwift (~> 1.0)
+  - lottie-ios
+  - SwiftSVG (~> 2.0)
+
+SPEC REPOS:
+  trunk:
+    - AmplitudeSwift
+    - AnalyticsConnector
+    - lottie-ios
+    - SwiftSVG
+
+SPEC CHECKSUMS:
+  AmplitudeSwift: 09bb81d68a8c242611df01c411fd9383192d9962
+  AnalyticsConnector: a53214d38ae22734c6266106c0492b37832633a9
+  lottie-ios: 3d98679b41fa6fd6aff2352b3953dbd3df8a397e
+  SwiftSVG: ca7f64e403b8ea7ea8eba8c823b83ba4a059834c
+
+PODFILE CHECKSUM: 76dba01c9a6716029ef7b8eb943da9acc4e47fc9
+
+COCOAPODS: 1.12.1

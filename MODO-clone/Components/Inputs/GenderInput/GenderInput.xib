@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GenderInput" customModule="MODO_clone" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="Mo5-kt-5w2" id="hmn-66-Wbt"/>
+                <outlet property="fGenderBtn" destination="rPi-Mc-iM3" id="MWz-4p-7oF"/>
+                <outlet property="mGenderBtn" destination="Jqy-NZ-2zE" id="UJS-CD-vT6"/>
+                <outlet property="nbGenderBtn" destination="R2H-Kf-CF3" id="9zK-0d-BcY"/>
+                <outlet property="title" destination="rqt-eq-Weq" id="pht-Ir-okE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="71"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLF-pw-vXz">
+                    <rect key="frame" x="0.0" y="0.0" width="352" height="71"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Género" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqt-eq-Weq">
+                            <rect key="frame" x="0.0" y="0.0" width="56" height="20.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como figura en tu DNI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mo5-kt-5w2">
+                            <rect key="frame" x="0.0" y="56.666666666666664" width="125.66666666666667" height="14.333333333333336"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="asx-ho-XVV">
+                            <rect key="frame" x="0.0" y="22.333333333333336" width="352" height="30.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jqy-NZ-2zE">
+                                    <rect key="frame" x="0.0" y="0.0" width="90.666666666666671" height="30.333333333333332"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="checkbox" imagePlacement="leading" title="Masculino" imagePadding="5" titleAlignment="leading">
+                                        <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                        <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                        <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="didTapOnMGender:" destination="-1" eventType="touchUpInside" id="EOm-NT-AgE"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPi-Mc-iM3">
+                                    <rect key="frame" x="131.66666666666666" y="0.0" width="88.333333333333343" height="30.333333333333332"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="checkbox" imagePlacement="leading" title="Femenino" imagePadding="5" titleAlignment="leading">
+                                        <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                        <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                        <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="didTapOnFGender:" destination="-1" eventType="touchUpInside" id="Naa-ip-dIO"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2H-Kf-CF3">
+                                    <rect key="frame" x="260.66666666666669" y="0.0" width="91.333333333333314" height="30.333333333333332"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="checkbox" imagePlacement="leading" title="No binario" imagePadding="5" titleAlignment="leading">
+                                        <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                        <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                        <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="didTapOnNbGender:" destination="-1" eventType="touchUpInside" id="vUV-mh-5rD"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Mo5-kt-5w2" firstAttribute="top" secondItem="asx-ho-XVV" secondAttribute="bottom" constant="4" id="MQ2-6U-BOc"/>
+                        <constraint firstAttribute="bottom" secondItem="Mo5-kt-5w2" secondAttribute="bottom" id="Ncp-gL-h0w"/>
+                        <constraint firstItem="rqt-eq-Weq" firstAttribute="top" secondItem="cLF-pw-vXz" secondAttribute="top" id="bcw-CO-A4L"/>
+                        <constraint firstItem="asx-ho-XVV" firstAttribute="top" secondItem="rqt-eq-Weq" secondAttribute="bottom" constant="2" id="hD1-Xf-86s"/>
+                        <constraint firstItem="rqt-eq-Weq" firstAttribute="leading" secondItem="cLF-pw-vXz" secondAttribute="leading" id="lOc-8O-Uhj"/>
+                        <constraint firstAttribute="trailing" secondItem="asx-ho-XVV" secondAttribute="trailing" id="ogQ-o4-eWO"/>
+                        <constraint firstItem="Mo5-kt-5w2" firstAttribute="leading" secondItem="cLF-pw-vXz" secondAttribute="leading" id="qWb-g5-jCR"/>
+                        <constraint firstItem="asx-ho-XVV" firstAttribute="leading" secondItem="cLF-pw-vXz" secondAttribute="leading" id="z86-xq-rye"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cLF-pw-vXz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="36m-uC-Heb"/>
+                <constraint firstItem="cLF-pw-vXz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FsL-rl-ZYt"/>
+                <constraint firstAttribute="bottom" secondItem="cLF-pw-vXz" secondAttribute="bottom" id="IqM-Mu-kny"/>
+                <constraint firstItem="cLF-pw-vXz" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="bUH-KV-DYS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-48.854961832061065" y="255.28169014084509"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkbox" width="20" height="20"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

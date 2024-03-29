@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationTableCell" customModule="MODO_clone" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell userInteractionEnabled="NO" contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="NotificationCellIdentifier" rowHeight="135" id="KGk-i7-Jjw" customClass="NotificationTableCell" customModule="MODO_clone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="486" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="486" height="135"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tuF-A8-eow">
+                        <rect key="frame" x="0.0" y="0.0" width="486" height="135"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wzv-Eo-l3H">
+                                <rect key="frame" x="16" y="16" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1Yb-Fo-7Yq"/>
+                                    <constraint firstAttribute="width" constant="50" id="EpK-Lf-PIU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super promos con modo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QqE-Xo-IIs">
+                                <rect key="frame" x="74" y="16" width="396" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCc-Gc-eZF">
+                                <rect key="frame" x="74" y="33.000000000000007" width="396" height="67.666666666666686"/>
+                                <string key="text">Vestibulum posuere augue ultrices, ultrices eros eu, congue nequeVestibulum posuere augue ultrices, ultrices eros eu, congue nequeVestibulum posuere augue ultrices, ultrices eros eu, congue neque</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="notificationCell" text="1 sem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dq5-es-0NX">
+                                <rect key="frame" x="75" y="104.66666666666667" width="30.333333333333329" height="14.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="backgroundColorModo"/>
+                        <constraints>
+                            <constraint firstItem="dq5-es-0NX" firstAttribute="leading" secondItem="tuF-A8-eow" secondAttribute="leading" constant="75" id="2tq-d0-bWi"/>
+                            <constraint firstItem="QqE-Xo-IIs" firstAttribute="leading" secondItem="Wzv-Eo-l3H" secondAttribute="trailing" constant="8" id="MaK-RX-Kj1"/>
+                            <constraint firstAttribute="bottom" secondItem="dq5-es-0NX" secondAttribute="bottom" constant="16" id="Nhs-TX-szY"/>
+                            <constraint firstItem="QqE-Xo-IIs" firstAttribute="top" secondItem="tuF-A8-eow" secondAttribute="top" constant="16" id="RXY-tt-9Q4"/>
+                            <constraint firstAttribute="trailing" secondItem="GCc-Gc-eZF" secondAttribute="trailing" constant="16" id="WWw-y7-R27"/>
+                            <constraint firstAttribute="trailing" secondItem="QqE-Xo-IIs" secondAttribute="trailing" constant="16" id="bxk-LI-VP1"/>
+                            <constraint firstItem="Wzv-Eo-l3H" firstAttribute="leading" secondItem="tuF-A8-eow" secondAttribute="leading" constant="16" id="l1u-rL-HHe"/>
+                            <constraint firstItem="GCc-Gc-eZF" firstAttribute="top" secondItem="QqE-Xo-IIs" secondAttribute="bottom" id="mKo-Sg-qRt"/>
+                            <constraint firstItem="GCc-Gc-eZF" firstAttribute="leading" secondItem="Wzv-Eo-l3H" secondAttribute="trailing" constant="8" id="uIp-D9-s5U"/>
+                            <constraint firstItem="Wzv-Eo-l3H" firstAttribute="top" secondItem="tuF-A8-eow" secondAttribute="top" constant="16" id="uXv-6g-nMQ"/>
+                            <constraint firstItem="dq5-es-0NX" firstAttribute="top" secondItem="GCc-Gc-eZF" secondAttribute="bottom" constant="4" id="xT9-20-KcS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tuF-A8-eow" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KKR-Ug-ssV"/>
+                    <constraint firstItem="tuF-A8-eow" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="OYU-vS-og9"/>
+                    <constraint firstAttribute="bottom" secondItem="tuF-A8-eow" secondAttribute="bottom" id="P47-iG-s67"/>
+                    <constraint firstAttribute="trailing" secondItem="tuF-A8-eow" secondAttribute="trailing" id="dLL-dw-5gi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="backgroundColorModo"/>
+            <connections>
+                <outlet property="notificationDate" destination="dq5-es-0NX" id="6I6-G9-vNf"/>
+                <outlet property="notificationImage" destination="Wzv-Eo-l3H" id="BSQ-WL-pDd"/>
+                <outlet property="notificationText" destination="GCc-Gc-eZF" id="oZb-Tk-aMc"/>
+                <outlet property="notificationTitle" destination="QqE-Xo-IIs" id="01f-95-Xjq"/>
+            </connections>
+            <point key="canvasLocation" x="-1432.06106870229" y="-220.07042253521129"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="backgroundColorModo">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedView" customModule="MODO_clone" customModuleProvider="target">
+            <connections>
+                <outlet property="fifthItem" destination="HV2-Oa-bFm" id="mna-l4-zjM"/>
+                <outlet property="firstItem" destination="h3z-zx-3Y1" id="Zyu-eo-pOt"/>
+                <outlet property="fourthItem" destination="n4S-1P-j67" id="sUn-zH-DFN"/>
+                <outlet property="secondItem" destination="njF-9z-bKS" id="uKt-vX-YNK"/>
+                <outlet property="thirdItem" destination="yIt-Li-85g" id="0G1-tD-YBk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="433"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Did-HN-xLr">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="433"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3z-zx-3Y1" customClass="FeedCell" customModule="MODO_clone" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="85"/>
+                            <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="njF-9z-bKS" customClass="FeedCell" customModule="MODO_clone" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="87" width="393" height="85"/>
+                            <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIt-Li-85g" customClass="FeedCell" customModule="MODO_clone" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="174" width="393" height="85"/>
+                            <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4S-1P-j67" customClass="FeedCell" customModule="MODO_clone" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="261" width="393" height="85"/>
+                            <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HV2-Oa-bFm" customClass="FeedCell" customModule="MODO_clone" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="348" width="393" height="85"/>
+                            <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="h3z-zx-3Y1" firstAttribute="top" secondItem="Did-HN-xLr" secondAttribute="top" id="Hhy-gD-sYQ"/>
+                        <constraint firstItem="h3z-zx-3Y1" firstAttribute="leading" secondItem="Did-HN-xLr" secondAttribute="leading" id="MKq-eS-bIC"/>
+                        <constraint firstAttribute="trailing" secondItem="h3z-zx-3Y1" secondAttribute="trailing" id="tAM-MW-Iro"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="backgroundColorModo"/>
+            <constraints>
+                <constraint firstItem="Did-HN-xLr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="C9A-Lm-akK"/>
+                <constraint firstItem="Did-HN-xLr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PsW-Sf-9GL"/>
+                <constraint firstItem="Did-HN-xLr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="t99-oh-xAy"/>
+                <constraint firstItem="Did-HN-xLr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ybf-VD-Sn2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="100" y="178.52112676056339"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="backgroundColorModo">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

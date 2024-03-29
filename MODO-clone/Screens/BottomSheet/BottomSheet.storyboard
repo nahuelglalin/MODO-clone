@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bottom Sheet View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="BottomSheetStoryboard" id="Y6W-OH-hqX" customClass="BottomSheetViewController" customModule="MODO_clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K8w-Yw-GCh">
+                                <rect key="frame" x="0.0" y="271" width="414" height="500"/>
+                                <subviews>
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="hNG-db-USm">
+                                        <rect key="frame" x="177" y="8" width="60" height="4"/>
+                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="yFD-TS-un3"/>
+                                            <constraint firstAttribute="height" constant="4" id="zwh-zc-KsB"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U9L-ur-TqF" customClass="FeedDetail" customModule="MODO_clone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="20" width="414" height="445"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="backgroundColorModo"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="U9L-ur-TqF" secondAttribute="bottom" constant="35" id="3x1-8m-fon"/>
+                                    <constraint firstItem="hNG-db-USm" firstAttribute="top" secondItem="K8w-Yw-GCh" secondAttribute="top" constant="8" id="Mtz-sR-tFm"/>
+                                    <constraint firstAttribute="trailing" secondItem="U9L-ur-TqF" secondAttribute="trailing" id="Myi-Kk-sx7"/>
+                                    <constraint firstItem="U9L-ur-TqF" firstAttribute="leading" secondItem="K8w-Yw-GCh" secondAttribute="leading" id="V8I-N8-lDE"/>
+                                    <constraint firstItem="U9L-ur-TqF" firstAttribute="top" secondItem="hNG-db-USm" secondAttribute="bottom" constant="8" id="mqO-g3-rYT"/>
+                                    <constraint firstItem="hNG-db-USm" firstAttribute="centerX" secondItem="K8w-Yw-GCh" secondAttribute="centerX" id="okg-6G-Pqb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K8w-Yw-GCh" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="8pw-iD-4PM"/>
+                            <constraint firstAttribute="bottom" secondItem="K8w-Yw-GCh" secondAttribute="bottom" constant="-35" id="EJH-Me-6zK"/>
+                            <constraint firstItem="K8w-Yw-GCh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="uoa-CL-KUn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomSheetContainer" destination="K8w-Yw-GCh" id="nDp-eh-2bG"/>
+                        <outlet property="dragIndicator" destination="hNG-db-USm" id="Vqn-qa-w8h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.43478260869566" y="-35.054347826086961"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="backgroundColorModo">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dni View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DniStoryboard" id="Y6W-OH-hqX" customClass="DniViewController" customModule="MODO_clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4zL-gj-gj5">
+                                <rect key="frame" x="0.0" y="119" width="393" height="699"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PZq-Yh-yav" customClass="DniInput" customModule="MODO_clone" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="0.0" width="361" height="80"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="2ty-dc-SF2"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srj-S6-o36">
+                                        <rect key="frame" x="16" y="641" width="361" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="xwq-yi-4mK"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Continuar">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapOnContinue:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="byb-jE-ZmW"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mfx-25-fmS" customClass="GenderInput" customModule="MODO_clone" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="96" width="361" height="80"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="IJ5-9r-MxJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="backgroundColorModo"/>
+                                <constraints>
+                                    <constraint firstItem="PZq-Yh-yav" firstAttribute="top" secondItem="4zL-gj-gj5" secondAttribute="top" id="0mV-5i-7Qx"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mfx-25-fmS" secondAttribute="trailing" constant="16" id="5LR-yd-1vQ"/>
+                                    <constraint firstItem="Mfx-25-fmS" firstAttribute="leading" secondItem="4zL-gj-gj5" secondAttribute="leading" constant="16" id="H17-pH-kXr"/>
+                                    <constraint firstItem="srj-S6-o36" firstAttribute="leading" secondItem="4zL-gj-gj5" secondAttribute="leading" constant="16" id="ZLK-xu-pZO"/>
+                                    <constraint firstItem="Mfx-25-fmS" firstAttribute="top" secondItem="PZq-Yh-yav" secondAttribute="bottom" constant="16" id="ZSd-Sk-gy5"/>
+                                    <constraint firstItem="PZq-Yh-yav" firstAttribute="leading" secondItem="4zL-gj-gj5" secondAttribute="leading" constant="16" id="fSm-PA-dqs"/>
+                                    <constraint firstAttribute="trailing" secondItem="srj-S6-o36" secondAttribute="trailing" constant="16" id="gVL-o0-Kky"/>
+                                    <constraint firstAttribute="bottom" secondItem="srj-S6-o36" secondAttribute="bottom" constant="8" id="h4B-NW-V9N"/>
+                                    <constraint firstAttribute="trailing" secondItem="PZq-Yh-yav" secondAttribute="trailing" constant="16" id="jJL-2F-IZY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="backgroundColorModo"/>
+                        <constraints>
+                            <constraint firstItem="4zL-gj-gj5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Hcn-bP-sC0"/>
+                            <constraint firstItem="4zL-gj-gj5" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="OVp-sj-bg3"/>
+                            <constraint firstItem="4zL-gj-gj5" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="YGc-CD-yCj"/>
+                            <constraint firstItem="4zL-gj-gj5" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="jKf-Wc-yyf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CWK-Kb-Zbj"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="continueBtn" destination="srj-S6-o36" id="7l1-82-sGf"/>
+                        <outlet property="continueBtnBottomConstraint" destination="h4B-NW-V9N" id="2H9-2o-axu"/>
+                        <outlet property="dniInput" destination="PZq-Yh-yav" id="Yx4-cb-0tw"/>
+                        <outlet property="genderInput" destination="Mfx-25-fmS" id="nIt-5O-uXX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052.6717557251909" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="backgroundColorModo">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

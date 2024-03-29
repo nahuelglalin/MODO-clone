@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Checkbox" customModule="MODO_clone" customModuleProvider="target">
+            <connections>
+                <outlet property="checkboxBtn" destination="CGh-Xe-IkH" id="DP4-Si-5mj"/>
+                <outlet property="label" destination="CeT-N5-eBe" id="sdN-qT-rbR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="51"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBx-hY-dLO">
+                    <rect key="frame" x="0.0" y="0.0" width="367" height="51"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGh-Xe-IkH">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Qp1-5f-dk0"/>
+                                <constraint firstAttribute="width" constant="40" id="uTc-JP-vCQ"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="checkbox"/>
+                            <connections>
+                                <action selector="didTapOnCheckbox:" destination="-1" eventType="touchUpInside" id="5WS-Ax-dXn"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acepto los términos, condiciones y políticas de privacidad" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeT-N5-eBe">
+                            <rect key="frame" x="40" y="6" width="327" height="33.666666666666664"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="CeT-N5-eBe" secondAttribute="trailing" id="16o-6A-92d"/>
+                        <constraint firstItem="CeT-N5-eBe" firstAttribute="leading" secondItem="CGh-Xe-IkH" secondAttribute="trailing" id="Alp-XX-dlB"/>
+                        <constraint firstItem="CGh-Xe-IkH" firstAttribute="leading" secondItem="dBx-hY-dLO" secondAttribute="leading" id="ZUK-yB-mGo"/>
+                        <constraint firstItem="CeT-N5-eBe" firstAttribute="top" secondItem="dBx-hY-dLO" secondAttribute="top" constant="6" id="nC2-c1-JFw"/>
+                        <constraint firstItem="CGh-Xe-IkH" firstAttribute="top" secondItem="dBx-hY-dLO" secondAttribute="top" id="zPg-cG-0x9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dBx-hY-dLO" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="NYx-4y-GNt"/>
+                <constraint firstItem="dBx-hY-dLO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="SDe-Iv-v8s"/>
+                <constraint firstAttribute="bottom" secondItem="dBx-hY-dLO" secondAttribute="bottom" id="jaF-4D-DGp"/>
+                <constraint firstItem="dBx-hY-dLO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="w9l-hL-wqP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="14.503816793893129" y="230.63380281690141"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkbox" width="20" height="20"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
